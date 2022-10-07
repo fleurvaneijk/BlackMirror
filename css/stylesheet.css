@@ -1,0 +1,451 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Proxima Nova", sans-serif;
+}
+
+body
+{
+	background-image: url("../afbeeldingen/background.jpg");
+	background-size: 100%;
+	background-repeat: repeat;
+	color: #FFFFFF;
+}
+
+main
+{
+	max-width: 1000px;
+	margin: 2em auto;
+	padding: 0;
+}
+
+/* VIDEOS ------- VIDEOS ------- VIDEOS ------- VIDEOS ------- VIDEOS ------- VIDEOS ------- VIDEOS ------- VIDEOS ------- VIDEOS */
+
+/*logo video*/
+video
+{
+	width: 100%;
+	height: 200px;
+}
+
+/*youtube trailer*/
+iframe
+{
+	width: 100%;
+	height: 400px;
+	padding-top: 0.3em;
+}
+
+
+/* NAVIGATIE ------- NAVIGATIE ------- NAVIGATIE ------- NAVIGATIE ------- NAVIGATIE ------- NAVIGATIE ------- NAVIGATIE ------- NAVIGATIE 
+
+/*de hele navigatie lijst*/
+nav ul
+{
+	background-image: url("../afbeeldingen/arkangelBW.jpg");
+	background-size: cover;
+
+	list-style: none;
+	margin: 0;
+	padding: 115px 0;
+	text-align: center;
+	width: 100%;
+	font-family: "Calibri", sans-serif;
+	font-weight: bold;
+}
+
+/*elke individuele optie*/
+nav ul li
+{
+	font-weight: bold;
+	display: inline-block;
+	font-size: 2.4em;
+	margin: auto;
+	padding: 0;
+	vertical-align: middle;
+	width: 240px;
+}
+
+/*elke tekst van de optie*/ 
+nav ul li a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+nav ul li a:hover
+{
+	color: #A9E2F3;
+}
+
+nav ul li a.selected
+{
+	color: #80bfff;
+}
+
+/*dropdown menu bij seizoenen*/
+.dropdown-content
+{
+	display: none;
+	list-style: none;
+}
+.dropdown:hover .dropdown-content
+{
+	display: block;
+	position: absolute;
+}
+.dropdown-content a
+{
+	margin-left: 80px;
+	color: #FFFFFF;
+	display: block;
+	font-weight: normal;
+	font-size: 0.5em;
+}
+
+/* TOTOP ------- TOTOP ------- TOTOP ------- TOTOP ------- TOTOP ------- TOTOP ------- TOTOP ------- TOTOP ------- TOTOP ------- TOTOP ------- TOTOP */
+
+/*back to top knop rechts onderin*/
+a.ToTop
+{
+	position: fixed;
+	font-size: 3em;
+	text-decoration: none;
+	color: #A9E2F3;
+	display: block;
+	background-color: #262626;
+	padding: 20px 24px 40px 20px;
+	cursor: pointer;
+	/*positie*/
+	left: 93%;
+	bottom: 0;
+}
+
+/* HOME ------- SEIZOENEN ------- HOME ------- SEIZOENEN ------- HOME ------- SEIZOENEN -------- HOME ------- SEIZOENEN ------- HOME ------- SEIZOENEN */
+
+/*paragraven*/
+article p
+{
+	font-size: 1.2em;
+}
+
+/*koppen*/
+article h1
+{
+	color: #80bfff;
+	padding-top: 1.5em;
+}
+article h1:first-child
+{
+	padding: 0;
+}
+
+article h2
+{
+	color: #A9E2F3;
+}
+
+article.seizoenen
+{
+	padding: 0.5em 0;
+}
+
+/*parallax afbeeldingen*/
+.parallax
+{
+	margin: 0;
+	height: 400px;
+    /* parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*welke afbeeldingen*/
+.bg1
+{
+	background-image: url(../afbeeldingen/historyOfYou.jpg);
+}
+.bg2
+{
+	background-image: url(../afbeeldingen/whiteBear.jpg);
+}
+.bg3
+{
+	background-image: url(../afbeeldingen/sanJunipero.jpg);
+}
+.bg4
+{
+	background-image: url(../afbeeldingen/arkangel.jpg);
+}
+
+
+/* MERCH ------- MERCH ------- MERCH ------- MERCH ------- MERCH ------- MERCH -------- MERCH ------- MERCH ------- MERCH ------- MERCH ------- MERCH */
+
+/*de grid*/
+ul.merch
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	list-style: none;
+	grid-row-gap: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+/*elk blok op zich*/
+ul.merch li
+{
+	border-radius: 2px;
+	background-color: #FFFFFF;
+	padding: 0.4em;
+	font-size: 0.8em;
+	margin-left: 0.4em;
+	position: relative;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+ul.merch li:hover
+{
+	cursor: pointer;
+	transform: scale(1.01);
+	box-shadow: 0 0 10px 0  #FFFFFF;
+	z-index: 99;
+}
+
+/*de afbeeldingen in de blokken*/
+ul.merch img
+{
+	width: 100%;
+	border-radius: 2px;
+}
+
+/*de tekst in de blokken*/
+a.merch
+{
+	text-decoration: none;
+	color: #000000;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	height: 100%;
+}
+
+/*prijs*/
+ul .prijs
+{
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+/* PRODUCTEN ------- PRODUCTEN ------- PRODUCTEN ------- PRODUCTEN */
+
+/*productomschrijving*/
+article.product
+{
+	display: block;
+	text-align: center;
+}
+
+/*afbeeldingen*/
+picture.product img
+{
+	width: 30%;
+	border-radius: 2px;
+}
+img#shirt1
+{
+	width: 40%;
+}
+img#shirt2, picture.product, img.thermoskan
+{
+	width: 20%;
+}
+img#waldo1
+{
+	width: 35%;
+}
+img#waldo2, img#waldo3
+{
+	width: 25%;
+}
+
+/*bestelknop*/
+a.bestelling
+{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #000000;
+	background-color: #009933;
+	border-radius: 2px;
+	padding: 10px;
+	margin-top: 50px;
+	text-align: center;
+}
+a.bestelling:hover
+{
+	color: #FFFFFF;
+	background-color: #006622;
+}
+
+/* BESTELFORMULIER ------- BESTELFORMULIER ------- BESTELFORMULIER ------- BESTELFORMULIER ------- BESTELFORMULIER ------- BESTELFORMULIER */
+
+/*tekst boven de invulhokjes*/
+label
+{
+	display: block;
+	color: #FFFFFF;
+	margin: 1em 0 0.3em;
+}
+
+/*invulhokjes*/
+input
+{
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 1em;
+	padding: 0.3em;
+	border: 1px solid #151515;
+	display: block;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+
+/*verstuurknop*/
+input#verstuur
+{
+	margin-top: 2em;
+}
+input#verstuur:hover
+{
+	background-color: #A9E2F3;
+}
+
+/* FOOTER ------- FOOTER ------- FOOTER ------- FOOTER ------- FOOTER ------- FOOTER ------- FOOTER ------- FOOTER ------- FOOTER ------- FOOTER */
+
+/*tekst*/
+footer p
+{
+	color: #A9E2F3;
+	text-align: center;
+	bottom: 0;
+	padding-top: 2em;
+}
+
+/*wikipedialink*/
+footer a
+{
+	color: #A9E2F3;
+}
+
+/* MEDIA ------- MEDIA ------- MEDIA ------- MEDIA ------- MEDIA ------- MEDIA ------- MEDIA ------- MEDIA ------- MEDIA ------- MEDIA */
+
+@media (max-width: 1300px)
+{
+	/*to top knop*/
+	a.ToTop
+	{
+		position: fixed;
+		font-size: 1em;
+		text-decoration: none;
+		color: #80bfff;
+		display: block;
+		background-color: #262626;
+		padding: 10px;
+		cursor: pointer;
+
+		left: 90%;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 1000px)
+{
+	main
+	{
+		padding: 0 14px;
+	}
+
+	/*footer tekst*/
+	footer p
+	{
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 800px)
+{
+	/*laat geen dropdown zien in mobiele modus*/
+	.dropdown:hover .dropdown-content
+	{
+		display: none;
+	}
+
+	/*logo video*/
+	video 
+	{
+		height: 120px;
+	}
+
+	/*de hele navigatie lijst*/
+	nav ul
+	{
+		padding: 20px 0;
+	}
+	/*elke optie in de lijst*/
+	nav li
+	{
+		text-align: center;
+	}
+
+	nav ul li
+	{
+		display: block;
+		font-size: 1.3em;
+	}
+
+	/*koppen*/
+	h1, h2
+	{
+		font-size: 1.2em;
+	}
+
+	/*de parallax afbeeldingen*/
+	.parallax
+	{
+		height: 300px;
+	}
+}
+
+@media (max-width: 500px)
+{
+	/*de parallax afbeeldingen*/
+	.parallax
+	{
+		height: 200px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 800px)
+{
+	/*merch grid*/
+	ul.merch
+	{
+		grid-template-columns: 1fr 1fr;
+		margin: 0 1em;
+	} 
+}
+
+@media (max-width: 500px)
+{
+	/*merch grid*/
+	ul.merch
+	{
+		grid-template-columns: 1fr;
+		margin: 0 1em;
+	} 
+}
